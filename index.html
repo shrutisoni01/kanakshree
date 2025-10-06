@@ -136,7 +136,7 @@ function showQ(){const q=questions[qIndex];questionText.textContent=q.q;opt1.tex
 function nextQ(){qIndex++;if(qIndex<questions.length)showQ();else{quiz.classList.add('hidden');startGallery();}}
 opt1.addEventListener('click',nextQ);opt2.addEventListener('click',nextQ);
 
-// Gallery - images 4 to 17
+// Gallery - images 1 to 17
 const photos=Array.from({length:16},(_,i)=>`bestie${i+4}.jpg`);
 let pIndex=0;
 function startGallery(){
@@ -158,3 +158,4 @@ function showNextPhoto(){
 </script>
 </body>
 </html>
+
